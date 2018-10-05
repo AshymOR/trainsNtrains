@@ -30,13 +30,7 @@ var config = {
   
   database.ref().set(newTrain);
   
- 
-    console.log("Train Name: " +newTrain.name);
-    console.log("Train Destination: " +newTrain.destination);
-    console.log("Train Start Time: " +newTrain.time);
-    console.log("Train Frequency: " +newTrain.frequency);
   
-
   $("#nameInput").val("");
   $("#destinationInput").val("");
   $("#timeInput").val("");
