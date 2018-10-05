@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>train time</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assests/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script type="text/javascript" src="assests/script.js"></script>
+</head>
+<body>
+
+    <div class="jumbotron bg-secondary">
+        <div class="row bg-dark">
+            <div class="col-md-3">
+                <img src="assests/images/horde.jpg" height="200" width="200">
+            </div>
+            <div class="col-md-6">
+                <img src="assests/images/grimrail.jpg" height="200">
+            </div>
+            <div class="col-md-3">
+                <img src="assests/images/horde.jpg" height="200" width="200">
+            </div>
+        </div>
+            <hr class="my-4">
+            <p class="lead text-danger">Welcome to the Grimrail Depot. Try not to die.</p>
+     </div>
+
+
+
+<div class="card mb-4 bg-secondary">
+        <div class="card-header bg-dark text-danger">Current Trains</div>
+        <div class="card-body">
+     <table class="table table-bordered" id="trainTable">
+            <thead>
+              <tr>
+                <th scope="col" class="bg-dark text-danger">Train Name</th>
+                <th scope="col" class="bg-dark text-danger">Destination</th>
+                <th scope="col" class="bg-dark text-danger">Frequency (min)</th>
+                <th scope="col" class="bg-dark text-danger">Next Arrivial</th>
+                <th scope="col" class="bg-dark text-danger">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    </div>
+</div>
+
+
+<div class="card mb-4 bg-secondary">
+        <div class="card-header bg-dark text-danger">Add a Train</div>
+        <div class="card-body">
+<form>
+    <div class="form-group bg-dark text-danger">
+          <label for="nameInput">Train Name</label>
+          <input class="form-control" type="text" id="nameInput">
+    </div>
+    
+    <div class="form-group bg-dark text-danger">
+                <label for="destinationInput">Destination</label>
+                <input class="form-control" type="text" id="destinationInput">
+    </div>
+
+    <div class="form-group bg-dark text-danger">
+            <label for="timeInput">First Arrival (HHmm - Military time)</label>
+            <input class="form-control" type="text" id="timeInput">
+    </div>
+
+    <div class="form-group bg-dark text-danger">
+            <label for="frequencyInput">Frequency</label>
+            <input class="form-control" type="text" id="frequencyInput">
+    </div>
+
+
+        <button type="submit" class="btn btn-dark text-danger" id="submitButton">Submit</button>
+      </form>
+</div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+</body>
+</html>
+
